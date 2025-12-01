@@ -5,6 +5,6 @@ import kotlin.io.path.readText
 
 
     fun readInput(name: String): List<String> {
-        val contents = Path("src/main/kotlin/$name.txt").readText().trim().lines()
+        val contents = Path("src/main/resources/$name.txt").readText().trim().lines()
         return contents
     }
