@@ -26,7 +26,8 @@ class Day01 {
 //            println(spin.direction.toString() + " " + spin.amount.toString())
             lockPosition = rotate(spin, lockPosition)
 
-            println("input was " + spin.direction.toString() + spin.amount.toString() + "current lock position is $lockPosition")
+            println("input was " + spin.direction.toString() + " "+ spin.amount.toString() + " current lock position is $lockPosition")
+            println("")
 
             if(lockPosition == 0){
                 timesOnZero += 1
@@ -52,6 +53,10 @@ class Day01 {
         val amount = spinner.amount
         val movement = direction * amount
         val rawPosition = currentPosition + movement
+        val pastZero = abs(rawPosition)/100
+        timesOnZero+=pastZero
+        println("past zero $pastZero")
+
         val finalPosition = (rawPosition % dialSize + dialSize) % dialSize
 
         return abs(finalPosition)
