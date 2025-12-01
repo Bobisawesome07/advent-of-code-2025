@@ -1,37 +1,57 @@
 package org.bobisawesome
 
+import kotlin.math.abs
 import kotlin.system.exitProcess
 
-fun main() {
-    val lockPosition = 50
-    val password = 0
-    val rotations = ArrayList<Rotation>()
+class Day01 {
+    var timesOnZero = 0
+    val dialSize = 100
 
-    println("Please input the name of the input file (do not include .txt")
+    fun main() {
+        var lockPosition = 50
+        val rotations = ArrayList<Rotation>()
 
-    val input = readInput(readln())
+        println("Please input the name of the input file (do not include .txt")
 
-    for (line in input.toString()) {
-        val dir: Int = direction(line.toString().first())
-        val amount = line.toString().substring(1).toInt()
-        val rotation = Rotation(dir, amount)
+        val input = readInput(readln())
 
-        rotations.add(rotation)
+        for (line in input) {
+            val dir: Int = direction(line.toString().first())
+            val amount = line.toString().substring(1).toInt()
+            val rotation = Rotation(dir, amount)
+
+            rotations.add(rotation)
+        }
+        for (spin in rotations) {
+            println(spin.direction.toString() + " " + spin.amount.toString())
+            lockPosition = rotate(spin, lockPosition)
+        }
+
+        println("The password is $timesOnZero")
     }
-    for (spin in rotations) {
-        println(spin.direction.toString() + " " + spin.amount.toString())
-    }
-}
 
-fun direction (direction: Char): Int {
-    if(direction == 'L') {
-        return -1;
+    fun direction(direction: Char): Int {
+        if (direction == 'L') {
+            return -1;
+        } else if (direction == 'R') {
+            return 1
+        } else {
+            println(direction)
+            exitProcess(143)
+        }
     }
-    else if(direction == 'R') {
-        return 1
-    }
-    else {
-        exitProcess(1)
+
+    fun rotate(spinner: Rotation, currentPosition: Int): Int {
+        val direction = spinner.direction
+        val amount = spinner.amount
+        val movement = direction * amount
+        val rawPosition = currentPosition + movement
+        val finalPosition = rawPosition % dialSize
+
+        if (finalPosition == 0) {
+            timesOnZero += 1
+        }
+        return abs(finalPosition)
     }
 }
 
