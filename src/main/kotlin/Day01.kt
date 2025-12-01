@@ -29,9 +29,7 @@ class Day01 {
             println("input was " + spin.direction.toString() + " "+ spin.amount.toString() + " current lock position is $lockPosition")
             println("")
 
-            if(lockPosition == 0){
-                timesOnZero += 1
-            }
+
         }
 
         println("The password is $timesOnZero")
@@ -52,14 +50,37 @@ class Day01 {
         val direction = spinner.direction
         val amount = spinner.amount
         val movement = direction * amount
-        val rawPosition = currentPosition + movement
-        val pastZero = abs(rawPosition)/100
-        timesOnZero+=pastZero
-        println("past zero $pastZero")
+        var pos = currentPosition
 
-        val finalPosition = (rawPosition % dialSize + dialSize) % dialSize
+        if(movement < 0){
+            for (num in 0..abs(movement)) {
+                if(pos==0) {
+                    pos = 99
+                    timesOnZero++
+                }
+                else {
+                    pos--
+                }
+            }
+        }
 
-        return abs(finalPosition)
+        else if(movement > 0) {
+            for (num in 0..movement) {
+                if(pos == 99) {
+                    pos = 0
+                }
+                else if(pos == 0) {
+                    timesOnZero++
+                    pos++
+                }
+                else {
+                    pos++
+                }
+            }
+        }
+
+
+        return abs(pos)
     }
 }
 
