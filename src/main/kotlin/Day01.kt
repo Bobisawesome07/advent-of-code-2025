@@ -53,27 +53,22 @@ class Day01 {
         var pos = currentPosition
 
         if(movement < 0){
-            for (num in 0..abs(movement)) {
+            for (num in 0 until abs(movement)) {
                 if(pos==0) {
                     pos = 99
-                    timesOnZero++
-                }
-                else {
+                } else {
                     pos--
+                    if(pos==0) {
+                        timesOnZero++
+                    }
                 }
             }
-        }
-
-        else if(movement > 0) {
-            for (num in 0..movement) {
+        } else if(movement > 0) {
+            for (num in 0 until movement) {
                 if(pos == 99) {
                     pos = 0
-                }
-                else if(pos == 0) {
-                    timesOnZero++
-                    pos++
-                }
-                else {
+                    timesOnZero ++
+                } else {
                     pos++
                 }
             }
