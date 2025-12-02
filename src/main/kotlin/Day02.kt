@@ -3,9 +3,28 @@ package org.bobisawesome
 class Day02 {
     fun main(inputFile: List<String>) {
         val input = inputFile[0].split(",")
-        for(thing in input) {
-            println("hi $thing")
-        }
+        var result: Long = 0
 
+        for(thing in input) {
+            val splitThing = thing.split("-")
+            val lower = splitThing[0]
+            val upper = splitThing[1]
+
+            println("lower is $lower upper is $upper")
+
+            for(num in lower.toInt()..upper.toInt()) {
+                val numString = num.toString()
+                val lastHalfNumString = numString.substring(numString.length/2)
+                val firstHalfNumString = numString.take(numString.length/2)
+
+                if(!isEven(numString.length)) {
+                    continue
+                } else if(lastHalfNumString == firstHalfNumString) {
+                    result += firstHalfNumString.toInt()
+                }
+            }
+
+            println("answer is $result")
+        }
     }
 }
