@@ -12,7 +12,7 @@ class Day02 {
 
             println("lower is $lower upper is $upper")
 
-            for(num in lower.toInt()..upper.toInt()) {
+            for(num in lower.toLong()..upper.toLong()) {
                 val numString = num.toString()
                 val lastHalfNumString = numString.substring(numString.length/2)
                 val firstHalfNumString = numString.take(numString.length/2)
@@ -20,11 +20,10 @@ class Day02 {
                 if(!isEven(numString.length)) {
                     continue
                 } else if(lastHalfNumString == firstHalfNumString) {
-                    result += firstHalfNumString.toInt()
+                    result += num
                 }
             }
-
-            println("answer is $result")
         }
+        println("answer is $result")
     }
 }
