@@ -3,19 +3,15 @@ package org.bobisawesome
 import kotlin.math.abs
 import kotlin.system.exitProcess
 
-class Day01 {
+class Day01() {
     var timesOnZero = 0
     val dialSize = 100
 
-    fun main() {
+    fun main(inputFile: List<String>) {
         var lockPosition = 50
         val rotations = ArrayList<Rotation>()
 
-        println("Please input the name of the input file (do not include .txt")
-
-        val input = readInput(readln())
-
-        for (line in input) {
+        for (line in inputFile) {
             val dir: Int = direction(line.toString().first())
             val amount = line.toString().substring(1).toInt()
             val rotation = Rotation(dir, amount)
