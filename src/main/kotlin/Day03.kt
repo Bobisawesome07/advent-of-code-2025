@@ -13,7 +13,7 @@ class Day03 {
 
             println("from $nums $biggest and $secondBiggest are the 2 biggest numbers")
 
-            if(biggestIndex >= secondBiggestIndex){
+            if(secondBiggestIndex >= biggestIndex){
                 result += (biggest.toString() + secondBiggest.toString()).toInt()
             } else {
                 result += (secondBiggest.toString() + biggest.toString()).toInt()
