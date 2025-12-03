@@ -7,6 +7,17 @@ class Day03 {
             val nums: MutableList<Int> = line.map { it.digitToInt() }.toMutableList()
             val biggest = nums.maxOrNull()
             val biggestIndex = nums.indexOf(nums.maxOrNull())
+            val numsSecond: MutableList<Int> = nums.toMutableList().apply { removeAt(nums.indexOf(biggest)) }
+            val secondBiggest = numsSecond.maxOrNull()
+            val secondBiggestIndex = numsSecond.indexOf(numsSecond.maxOrNull())
+
+            println("from $nums $biggest and $secondBiggest are the 2 biggest numbers")
+
+            if(biggestIndex >= secondBiggestIndex){
+                result += (biggest.toString() + secondBiggest.toString()).toInt()
+            } else {
+                result += (secondBiggest.toString() + biggest.toString()).toInt()
+            }
         }
         println("output joltage is $result")
     }
