@@ -11,6 +11,10 @@ fun main() {
             val file = readInput("input02")
             Day02().main(file)
         }
+        "3" -> {
+            val file = readInput("input03")
+            Day03().main(file)
+        }
         "1t" -> {
             val file = readInput("test01")
             Day01().main(file)
@@ -18,6 +22,10 @@ fun main() {
         "2t" -> {
             val file = readInput("test02")
             Day02().main(file)
+        }
+        "3t" -> {
+            val file = readInput("test03")
+            Day03().main(file)
         }
         else -> println("Day $day not implemented yet")
     }
