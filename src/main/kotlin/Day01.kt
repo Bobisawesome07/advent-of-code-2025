@@ -3,7 +3,7 @@ package org.bobisawesome
 import kotlin.math.abs
 import kotlin.system.exitProcess
 
-class Day01() {
+class Day01 {
     var timesOnZero = 0
     val dialSize = 100
 
