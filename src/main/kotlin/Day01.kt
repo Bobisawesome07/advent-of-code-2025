@@ -74,6 +74,3 @@ class Day01 {
         return abs(pos)
     }
 }
-
-data class Rotation (val direction: Int,val amount: Int){
-}
