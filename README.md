@@ -45,7 +45,7 @@ advent-of-code-2025/
 
 ## 📝 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [GPL v3.0 License](LICENSE).
 
 ---
 
