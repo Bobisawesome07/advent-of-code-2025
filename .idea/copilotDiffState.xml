@@ -7,6 +7,7 @@
           <value>
             <PendingDiffInfo>
               <option name="filePath" value="$PROJECT_DIR$/src/main/kotlin/Day04.kt" />
+              <option name="originalContent" value="package org.bobisawesome&#10;" />
               <option name="updatedContent" value="package org.bobisawesome&#10;&#10;class Day04 {&#10;    fun main(inputFile: List&lt;String&gt;) {&#10;        println(&quot;Day 04 - Part 1&quot;)&#10;        part1(inputFile)&#10;        &#10;        println(&quot;\nDay 04 - Part 2&quot;)&#10;        part2(inputFile)&#10;    }&#10;    &#10;    private fun part1(input: List&lt;String&gt;) {&#10;        // TODO: Implement Day 04 Part 1&#10;        println(&quot;Not implemented yet&quot;)&#10;    }&#10;    &#10;    private fun part2(input: List&lt;String&gt;) {&#10;        // TODO: Implement Day 04 Part 2&#10;        println(&quot;Not implemented yet&quot;)&#10;    }&#10;}&#10;" />
             </PendingDiffInfo>
           </value>
