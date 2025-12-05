@@ -7,7 +7,7 @@ class Day03 {
             val nums: MutableList<Int> = line.map { it.digitToInt() }.toMutableList()
             val biggest = nums.maxOrNull()
             val biggestIndex = nums.indexOf(nums.maxOrNull())
-            val numsSecond: MutableList<Int> = nums.toMutableList().apply { removeAt(nums.indexOf(biggest)) }
+            val numsSecond: MutableList<Int> = nums.toMutableList()
             val secondBiggest = numsSecond.maxOrNull()
             val secondBiggestIndex = numsSecond.indexOf(numsSecond.maxOrNull())
 

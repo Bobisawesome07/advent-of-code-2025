@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="564a30c9-50fe-49fa-9a3d-190e9ed48f96" name="Changes" comment="Add Day04 and Day05 classes with main methods; update Main for input handling">
-      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
+    <list default="true" id="564a30c9-50fe-49fa-9a3d-190e9ed48f96" name="Changes" comment="Add Day04 class with main methods and update workspace configuration">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day03.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day03.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day04.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day04.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Utils.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +80,7 @@
       <workItem from="1764780697016" duration="5411000" />
       <workItem from="1764790444531" duration="1420000" />
       <workItem from="1764793179221" duration="1549000" />
-      <workItem from="1764953347396" duration="313000" />
+      <workItem from="1764953347396" duration="6346000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor Rotation data class and update project configuration files">
       <option name="closed" value="true" />
@@ -127,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764953622395</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add Day04 class with main methods and update workspace configuration">
+      <option name="closed" value="true" />
+      <created>1764953700292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764953700292</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -137,7 +148,8 @@
     <MESSAGE value="swapped if statement comparison" />
     <MESSAGE value="Update workspace.xml to reflect recent task summaries and last commit message" />
     <MESSAGE value="Add Day04 and Day05 classes with main methods; update Main for input handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Day04 and Day05 classes with main methods; update Main for input handling" />
+    <MESSAGE value="Add Day04 class with main methods and update workspace configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Day04 class with main methods and update workspace configuration" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

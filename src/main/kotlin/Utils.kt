@@ -19,3 +19,4 @@ fun isEven(input: Int): Boolean {
 
 data class Rotation (val direction: Int,val amount: Int){
 }
+
