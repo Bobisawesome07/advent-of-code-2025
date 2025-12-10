@@ -13,6 +13,9 @@ fun isEven(input: Int): Boolean {
     return input % 2 == 0
 }
 
-data class Rotation (val direction: Int,val amount: Int){
+data class Range (val lower: Long, val upper: Long) {
+}
+
+data class Rotation (val direction: Int,val amount: Int) {
 }
 
