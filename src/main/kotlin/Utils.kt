@@ -10,11 +10,7 @@ fun readInput(name: String): List<String> {
 }
 
 fun isEven(input: Int): Boolean {
-    return if(input % 2 == 0){
-        true
-    } else {
-        false
-    }
+    return input % 2 == 0
 }
 
 data class Rotation (val direction: Int,val amount: Int){
