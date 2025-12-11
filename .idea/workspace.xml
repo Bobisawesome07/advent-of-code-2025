@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="564a30c9-50fe-49fa-9a3d-190e9ed48f96" name="Changes" comment="style fixup big">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day05.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day05.kt" afterDir="false" />
+    <list default="true" id="564a30c9-50fe-49fa-9a3d-190e9ed48f96" name="Changes" comment="day 5 part 2 works!">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day06.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day07.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day08.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day09.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day10.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day11.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day12.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +120,7 @@
       <workItem from="1765224475055" duration="2340000" />
       <workItem from="1765230741485" duration="9000" />
       <workItem from="1765394715654" duration="8371000" />
-      <workItem from="1765481586458" duration="2689000" />
+      <workItem from="1765481586458" duration="3099000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor Rotation data class and update project configuration files">
       <option name="closed" value="true" />
@@ -221,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765483559739</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="day 5 part 2 works!">
+      <option name="closed" value="true" />
+      <created>1765484390257</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1765484390257</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -238,7 +251,8 @@
     <MESSAGE value="moar progress on day 5 part 2" />
     <MESSAGE value="style fixup" />
     <MESSAGE value="style fixup big" />
-    <option name="LAST_COMMIT_MESSAGE" value="style fixup big" />
+    <MESSAGE value="day 5 part 2 works!" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 5 part 2 works!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
