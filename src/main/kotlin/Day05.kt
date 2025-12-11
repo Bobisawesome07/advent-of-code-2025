@@ -7,13 +7,13 @@ class Day05 {
         val availableItems = inputFile.subList(emptyLine + 1, inputFile.size).toMutableList()
         var freshItems: Long = 0
 
-        for(id in availableItems) {
+        for (id in availableItems) {
             for (range in freshRanges) {
                 val upperAndLower = range.split("-")
                 val lower = upperAndLower[0].toLong()
                 val upper = upperAndLower[1].toLong()
 
-                if(id.toLong() in lower..upper) {
+                if (id.toLong() in lower..upper) {
                     freshItems++
                     break
                 }
@@ -23,21 +23,22 @@ class Day05 {
 
         val freshRangesLong = ArrayList<Range>()
 
-        for(range in freshRanges) {
+        for (range in freshRanges) {
             val (lower, upper) = range.split("-").map { it.toLong() }
             freshRangesLong.add(Range(lower, upper))
         }
 
-        val rangesSorted = freshRangesLong.sortedBy{ it.lower }
+        val rangesSorted = freshRangesLong.sortedBy { it.lower }
         val mergedRanges = mutableListOf<Range>()
 
         rangesSorted.forEach { println(it) }
         mergedRanges.add(rangesSorted[0])
 
-        for((currentRange, nextRange) in rangesSorted.windowed(2)){
+        for ((currentRange, nextRange) in rangesSorted.windowed(2)) {
 
-            if(nextRange.lower <= currentRange.upper + 1) {
-                mergedRanges[mergedRanges.lastIndex] = Range(currentRange.lower, maxOf(currentRange.upper, nextRange.upper))
+            if (nextRange.lower <= currentRange.upper + 1) {
+                mergedRanges[mergedRanges.lastIndex] =
+                    Range(currentRange.lower, maxOf(currentRange.upper, nextRange.upper))
             } else {
                 mergedRanges.add(nextRange)
             }
