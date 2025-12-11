@@ -27,9 +27,23 @@ class Day05 {
             val (lower, upper) = range.split("-").map { it.toLong() }
             freshRangesLong.add(Range(lower, upper))
         }
-        val rangesSorted = freshRangesLong.sortedBy { it.lower }
 
-        println(rangesSorted)
+        val rangesSorted = freshRangesLong.sortedBy{ it.lower }
+        val mergedRanges = mutableListOf<Range>()
+
+        rangesSorted.forEach { println(it) }
+        mergedRanges.add(rangesSorted[0])
+
+        for((currentRange, nextRange) in rangesSorted.windowed(2)){
+
+            if(nextRange.lower <= currentRange.upper + 1) {
+                mergedRanges[mergedRanges.lastIndex] = Range(currentRange.lower, maxOf(currentRange.upper, nextRange.upper))
+            } else {
+                mergedRanges.add(nextRange)
+            }
+        }
+
+        println("\nMerged ranges:")
+        mergedRanges.forEach { println(it) }
     }
-
 }
