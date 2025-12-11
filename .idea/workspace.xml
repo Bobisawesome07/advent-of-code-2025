@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="564a30c9-50fe-49fa-9a3d-190e9ed48f96" name="Changes" comment="style fixup" />
+    <list default="true" id="564a30c9-50fe-49fa-9a3d-190e9ed48f96" name="Changes" comment="style fixup big">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day05.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day05.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +80,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RunManager">
@@ -112,7 +115,7 @@
       <workItem from="1765224475055" duration="2340000" />
       <workItem from="1765230741485" duration="9000" />
       <workItem from="1765394715654" duration="8371000" />
-      <workItem from="1765481586458" duration="1890000" />
+      <workItem from="1765481586458" duration="2689000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor Rotation data class and update project configuration files">
       <option name="closed" value="true" />
@@ -210,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765483297147</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="style fixup big">
+      <option name="closed" value="true" />
+      <created>1765483559739</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1765483559739</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -226,7 +237,8 @@
     <MESSAGE value="started day 5 part 2, am stuck for now" />
     <MESSAGE value="moar progress on day 5 part 2" />
     <MESSAGE value="style fixup" />
-    <option name="LAST_COMMIT_MESSAGE" value="style fixup" />
+    <MESSAGE value="style fixup big" />
+    <option name="LAST_COMMIT_MESSAGE" value="style fixup big" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

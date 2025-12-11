@@ -30,21 +30,23 @@ class Day05 {
 
         val rangesSorted = freshRangesLong.sortedBy { it.lower }
         val mergedRanges = mutableListOf<Range>()
+        var numFreshItems = 0L
 
         rangesSorted.forEach { println(it) }
         mergedRanges.add(rangesSorted[0])
 
         for ((currentRange, nextRange) in rangesSorted.windowed(2)) {
 
-            if (nextRange.lower <= currentRange.upper + 1) {
+            val lastMerged = mergedRanges.last()
+
+            if (nextRange.lower <= lastMerged.upper + 1) {
                 mergedRanges[mergedRanges.lastIndex] =
-                    Range(currentRange.lower, maxOf(currentRange.upper, nextRange.upper))
+                    Range(lastMerged.lower, maxOf(lastMerged.upper, nextRange.upper))
             } else {
                 mergedRanges.add(nextRange)
             }
         }
-
-        println("\nMerged ranges:")
-        mergedRanges.forEach { println(it) }
+        mergedRanges.forEach { numFreshItems += ((it.upper - it.lower) + 1) }
+        println("The number of fresh items in the ranges is $numFreshItems")
     }
 }
