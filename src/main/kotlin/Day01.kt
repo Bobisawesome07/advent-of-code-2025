@@ -22,7 +22,7 @@ class Day01 {
 //            println(spin.direction.toString() + " " + spin.amount.toString())
             lockPosition = rotate(spin, lockPosition)
 
-            println("input was " + spin.direction.toString() + " "+ spin.amount.toString() + " current lock position is $lockPosition")
+            println("input was " + spin.direction.toString() + " " + spin.amount.toString() + " current lock position is $lockPosition")
             println("")
 
 
@@ -33,7 +33,7 @@ class Day01 {
 
     fun direction(direction: Char): Int {
         if (direction == 'L') {
-            return -1;
+            return -1
         } else if (direction == 'R') {
             return 1
         } else {
@@ -48,22 +48,22 @@ class Day01 {
         val movement = direction * amount
         var pos = currentPosition
 
-        if(movement < 0){
+        if (movement < 0) {
             for (num in 0 until abs(movement)) {
-                if(pos==0) {
+                if (pos == 0) {
                     pos = 99
                 } else {
                     pos--
-                    if(pos==0) {
+                    if (pos == 0) {
                         timesOnZero++
                     }
                 }
             }
-        } else if(movement > 0) {
+        } else if (movement > 0) {
             for (num in 0 until movement) {
-                if(pos == 99) {
+                if (pos == 99) {
                     pos = 0
-                    timesOnZero ++
+                    timesOnZero++
                 } else {
                     pos++
                 }

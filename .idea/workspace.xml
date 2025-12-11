@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="564a30c9-50fe-49fa-9a3d-190e9ed48f96" name="Changes" comment="started day 5 part 2, am stuck for now">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day05.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day05.kt" afterDir="false" />
-    </list>
+    <list default="true" id="564a30c9-50fe-49fa-9a3d-190e9ed48f96" name="Changes" comment="style fixup" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,21 +64,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.advent-of-code-2025 [:org.bobisawesome.MainKt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.advent-of-code-2025 [:org.bobisawesome.MainKt.main()].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="temurin-21" />
@@ -114,7 +112,7 @@
       <workItem from="1765224475055" duration="2340000" />
       <workItem from="1765230741485" duration="9000" />
       <workItem from="1765394715654" duration="8371000" />
-      <workItem from="1765481586458" duration="1414000" />
+      <workItem from="1765481586458" duration="1890000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor Rotation data class and update project configuration files">
       <option name="closed" value="true" />
@@ -196,7 +194,23 @@
       <option name="project" value="LOCAL" />
       <updated>1765410107294</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="moar progress on day 5 part 2">
+      <option name="closed" value="true" />
+      <created>1765483084114</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1765483084114</updated>
+    </task>
+    <task id="LOCAL-00012" summary="style fixup">
+      <option name="closed" value="true" />
+      <created>1765483297147</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1765483297147</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,7 +224,9 @@
     <MESSAGE value="Add Day04 class with grid creation and scanning logic; refactor Day03 for second largest number calculation" />
     <MESSAGE value="Update Kotlin version and refactor project configuration files and intial day code" />
     <MESSAGE value="started day 5 part 2, am stuck for now" />
-    <option name="LAST_COMMIT_MESSAGE" value="started day 5 part 2, am stuck for now" />
+    <MESSAGE value="moar progress on day 5 part 2" />
+    <MESSAGE value="style fixup" />
+    <option name="LAST_COMMIT_MESSAGE" value="style fixup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
