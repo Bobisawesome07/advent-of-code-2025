@@ -14,6 +14,11 @@ class Day03 {
 
     fun getJoltage (joltageList: List<Int>): Int {
         var result = 0
-        return 0
+        val listNoEnd = joltageList.subList(0, joltageList.size - 1)
+        val o = listNoEnd.indexOf(listNoEnd.max())
+        val g = joltageList.subList(o, joltageList.size)
+        result += listNoEnd.max() * 10
+        result += g.max()
+        return result
     }
 }
