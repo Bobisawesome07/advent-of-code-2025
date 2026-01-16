@@ -15,10 +15,11 @@ class Day03 {
     fun getJoltage (joltageList: List<Int>): Int {
         var result = 0
         val listNoEnd = joltageList.subList(0, joltageList.size - 1)
-        val o = listNoEnd.indexOf(listNoEnd.max())
+        val o = listNoEnd.indexOf(listNoEnd.max()) + 1
         val g = joltageList.subList(o, joltageList.size)
         result += listNoEnd.max() * 10
         result += g.max()
+        println("debug or something idfk, result it $result")
         return result
     }
 }
