@@ -12,7 +12,7 @@ class Day03 {
         println("output joltage is $result")
     }
 
-    fun getJoltage (joltageList: List<Int>): Int {
+    fun getJoltage(joltageList: List<Int>): Int {
         var result = 0
         val listNoEnd = joltageList.subList(0, joltageList.size - 1)
         val o = listNoEnd.indexOf(listNoEnd.max()) + 1

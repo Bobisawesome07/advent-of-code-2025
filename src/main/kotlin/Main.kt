@@ -29,7 +29,7 @@ fun main() {
         }
 
         "6" -> {
-            val file = readInput("input06.txt")
+            val file = readInput("input06")
             Day06().main(file)
         }
 
